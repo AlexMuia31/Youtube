@@ -1,4 +1,4 @@
-import { Box } from "@mui/material";
+import { Box, Toolbar } from "@mui/material";
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -15,6 +15,8 @@ const App = () => {
     <BrowserRouter>
       <Box sx={{ backgroundColor: "#000" }}>
         <Navbar />
+        <Toolbar />
+        <Toolbar />
         <Routes>
           <Route path="/" element={<Feed />} />
           <Route path="/video:id" element={<VideoDetail />} />
