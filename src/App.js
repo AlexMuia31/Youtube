@@ -15,8 +15,8 @@ const App = () => {
     <BrowserRouter>
       <Box sx={{ backgroundColor: "#000" }}>
         <Navbar />
-        <Toolbar />
-        <Toolbar />
+        <Toolbar sx={{ mt: "1.5%" }} />
+
         <Routes>
           <Route path="/" element={<Feed />} />
           <Route path="/video:id" element={<VideoDetail />} />
